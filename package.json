@@ -4,7 +4,8 @@
   "description": "¿Cuantós Car2Gos Hay En El Mundo, cuantós?",
   "main": "car2go.js",
   "dependencies": {
-    "cheerio": "^0.19.0"
+    "cheerio": "^0.19.0",
+    "numeral": "^1.5.3" 
   },
   "devDependencies": {},
   "author": "Naomi Rubin",

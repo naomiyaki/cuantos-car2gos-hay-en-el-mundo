@@ -1,5 +1,6 @@
 var https = require('https');
 var cheerio = require('cheerio');
+var numeral = require('numeral');
 
 var pageHTML = ''
 var cuantos = 0;
@@ -23,6 +24,6 @@ https.get('https://en.wikipedia.org/wiki/Car2Go', function(res){
       }
     });
     console.log("¿Cuantós Car2Gos Hay En El Mundo, cuantós?");
-    console.log("Hay: " + cuantos);
+    console.log("Hay: " + numeral(cuantos).format('0,0'));
   });
 });
